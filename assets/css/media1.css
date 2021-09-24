@@ -1,0 +1,77 @@
+/*mediaquery-for-tablet-(ipad)*/
+
+@media only screen and (min-width:480px) and (max-width:800px) {
+    /*navbar*/
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0 0;
+    }
+    .toggle-button {
+        display: flex;
+    }
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+    .navbar-links ul li {
+        text-align: center;
+    }
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+    .navbar-links.active {
+        display: flex;
+    }
+    /*-------*/
+     /*drop-down-menus*/
+     .dropdown {
+        z-index: 1;
+    }
+    /*---------*/
+    /*home-section*/
+    .homeSection {
+        height: 100vh;
+    }
+    .homeSection__flexDesign {
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+    }
+    .homeSection__flexRight {
+        width: 100%;
+        text-align: center;
+        order: 2;
+    }
+    .homeSection__flexRight h1 {
+        font-size: 50px;
+        line-height: 60px;
+    }
+    .homeSection__flexRight p {
+        width: 80%;
+        margin: auto;
+    }
+    .homeSection__flexLeft {
+        order: 1;
+        height: 380PX;
+        width: 380px;
+        padding-top: 96px;
+    }
+    /*-------*/
+    /*servicesection(tours)*/
+    .serviceSection__heading1-contents {
+        width: 100%;
+    }
+    .serviceSection__heading1-contents p {
+        font-size: 18.5px;
+        width: 80%;
+    }
+
+
+
+    /*-------*/
+}
