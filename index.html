@@ -15,50 +15,70 @@
     <meta name="author" content="" />
     <!---->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://kit.fontawesome.com/a6fdd348af.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" charset="utf-8"></script>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/media1.css">
     <link rel="stylesheet" href="assets/css/media2.css">
+    <link rel="stylesheet" href="assets/css/home.css">
 </head>
 
 <body>
     <!--navbar-->
-    <nav class="navbar">
-        <div class="brand-title"><span>Tech</span>tify<span>.</span></div>
-        <!--burger-->
-        <a href="#" class="toggle-button">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </a>
-        <!-------->
-        <div class="navbar-links">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <!--drop-down-menu-->
-                <li class="service-dropDown"><a href="#">Services</a>
-                    <ul class="dropdown">
-                        <li><a href="#toursSection">Tour & Travels</a></li>
-                        <li><a href="#financialServices">Financial Services</a></li>
+
+    <header>
+        <a href="#" class="logo"><span>Tech</span>tify</a>
+        <div class="navigation">
+            <ul class="menu">
+                <div class="close-btn"></div>
+                <li class="menu-item"><a href="#">Home</a></li>
+                <li class="menu-item">
+                    <a class="sub-btn" href="#toursSection">Tours & Travel <i class="fas fa-angle-down"></i></a>
+                    <ul class="sub-menu">
+                        <li class="sub-item"><a href="#toursSection">Visa Services</a></li>
+                        <li class="sub-item"><a href="#toursSection">Flight Booking</a></li>
+                        <li class="sub-item"><a href="#toursSection">Hotel Booking</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Pricing</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Blog</a></li>
+                <li class="menu-item">
+                    <a class="sub-btn" href="#financialServices">Financial Services <i
+                            class="fas fa-angle-down"></i></a>
+                    <ul class="sub-menu">
+                        <li class="sub-item"><a href="#financialServices">Pan Card</a></li>
+                        <li class="sub-item"><a href="#financialServices">GST Registration</a></li>
+                        <li class="sub-item"><a href="#financialServices">GST & IT Returns Filing</a></li>
+                        <li class="sub-item"><a href="#">PF Claiming</a></li>
+                        <li class="sub-item more">
+                            <a class="more-btn" href="#">More Items <i class="fas fa-angle-right"></i></a>
+                            <ul class="more-menu">
+                                <li class="more-item"><a href="#">More Item 01</a></li>
+                                <li class="more-item"><a href="#">More Item 02</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-item"><a href="#about-container">About</a></li>
+                <li class="menu-item"><a href="#blog-section">Blog</a></li>
+                <li class="menu-item"><a href="#">Contact</a></li>
             </ul>
         </div>
-    </nav>
+        <div class="menu-btn"></div>
+    </header>
+
     <!-------->
     <!--home-setion-->
-    <section class="homeSection">
+    <section class="homeSection section gradient-banner">
+
+
         <div class="homeSection__flexDesign">
             <div class="homeSection__flexRight">
 
-                <h1>Make Your Business More Profitable</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam assumenda ea quo cupiditate
-                    facere deleniti fuga officia.</p>
-                <a href=""><button class="homeSection--button">Get Started</button></a>
+                <h1>Helping Business Transform with Technology</h1>
+                <p>We introduce ourselves as a fast-growing services provider to the customer/client, we offering
+                    multiple services like Tour Operator & Travel Agent, financial assistance, common Services, etc..
+                </p>
+                <a href=""><button class="homeSection--button">Get in Touch</button></a>
+                <a href=""><button class="homeSection--button2">Learn more</button></a>
 
             </div>
             <div class="homeSection__flexLeft">
@@ -69,7 +89,8 @@
     <!--------->
 
     <!--Service-section-->
-   <section class="serviceSection">
+
+    <section class="serviceSection">
         <div class="serviceSection__heading1-contents">
             <h1 id="toursSection">Tour & Travels</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga quos quaerat sapiente nam, id vero.</p>
@@ -91,7 +112,7 @@
                         <h3>Visa Services</h3>
                         <p>Visa services like tourist visa, business visa, visitor visa, and working visa for all
                             countries with fast & easy Manner. Avoid spending time in airport</p>
-                        <a href="#">Read More</a>
+                        <a href="#">-- Read More --</a>
                     </div>
                 </div>
 
@@ -108,7 +129,7 @@
                         <h3>Flight Booking</h3>
                         <p>Best deals to book flight tickets with special offers and payment friendly are
                             available for domestic as well as international flight tickets.</p>
-                        <a href="#">Read More</a>
+                        <a href="#">-- Read More --</a>
                     </div>
                 </div>
 
@@ -125,7 +146,7 @@
                         <h3>Hotel Booking</h3>
                         <p>We are specializing in International & Domestic Hotel Room Bookings Our Mission is to that
                             provide a Quality service with web portals.</p>
-                        <a href="#">Read More</a>
+                        <a href="#">-- Read More --</a>
                     </div>
                 </div>
 
@@ -161,7 +182,7 @@
                         <h3>Pan Card</h3>
                         <p>We offer a fresh pan card, correction in pan card, NRI pan card. In pan card status
                             every step by step process we update to our customer.</p>
-                        <a href="#">Read More</a>
+                        <a href="#">-- Read More --</a>
                     </div>
                 </div>
 
@@ -179,7 +200,7 @@
                         <h3>GST Registration</h3>
                         <p>we process to create GST compliant invoices, record expenses, track inventory and finally
                             automatically prepare GST-ready tax returns.</p>
-                        <a href="#">Read More</a>
+                        <a href="#">-- Read More --</a>
                     </div>
                 </div>
 
@@ -196,16 +217,19 @@
                     <div class="serviceSection__Container">
                         <h3>IT & GST Filing</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae
-                            eligendi at.lorem lorem lorem lorem. lorem..</p>
-                        <a href="#">Read More</a>
+                            eligendi at.lorem lorem lorem lorem.</p>
+                        <a href="#">-- Read More --</a>
                     </div>
                 </div>
 
             </div>
 
+            <button class="service-btn">View all Services</button>
+
+            <div class="service-btnPad"></div>
 
         </div>
-        <!---------------> 
+
     </section>
 
     <!----End-of-services-section----->
@@ -213,6 +237,278 @@
 
 
 
+    <!----about-section----->
+
+    <section class="about-section">
+
+        <div class="about-section__container" id="about-container">
+            <div class="about-section-left">
+                <div class="about-section-contents">
+                    <h3>About us</h3>
+                    <h1>We are dynamic team of creative people</h1>
+                    <p id="about-para">We provide consulting services in the area of IFRS and management reporting,
+                        helping companies to
+                        reach their highest level. We optimize business processes, making them easier.</p>
+                    <button class="about-section__btn">Get in Touch</button>
+
+                </div>
+
+            </div>
+
+
+            <div class="about-section-right">
+                <!--Image-slider--->
+
+                <div id="about-slider" class="hcg-slider">
+                    <div class="hcg-slide-container">
+                        <div class="hcg-slider-body">
+                            <a class="hcg-slides animated" style="display:block">
+                                <span class="hcg-slide-number">1/5</span>
+                                <img src="https://html-generator.com/uploads/images/2021/09/26/35673LN9WWO8CFQ.jpg"
+                                    alt="slider-1">
+                                <span class="hcg-slide-text">slider-1</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="hcg-slide-dot-control"></div>
+                </div>
+
+
+
+                <!--Image-slider--->
+            </div>
+
+        </div>
+
+
+        <div class="about-section__msg-section">
+
+            <div class="about-section__msgBox">
+                <h3><span>01.</span> Our Mission</h3>
+                <p>llum similique ducimus accusamus laudantium praesentium, impedit quaerat, itaque maxime sunt deleniti
+                    voluptas distinctio .</p>
+            </div>
+            <div class="about-section__msgBox">
+                <h3><span>02.</span> Our Vission</h3>
+                <p>llum similique ducimus accusamus laudantium praesentium, impedit quaerat, itaque maxime sunt deleniti
+                    voluptas distinctio .</p>
+            </div>
+            <div class="about-section__msgBox">
+                <h3><span>03.</span> Our Approach</h3>
+                <p>llum similique ducimus accusamus laudantium praesentium, impedit quaerat, itaque maxime sunt deleniti
+                    voluptas distinctio .</p>
+            </div>
+
+        </div>
+
+
+
+        <!------revies-section--------->
+
+        <div class="testimonials">
+            <div class="inner">
+                <h1>Top Reviews</h1>
+                <div class="border"></div>
+
+                <div class="row">
+                    <div class="col">
+                        <div class="testimonial">
+                            <img src="assets/img/rewiew-1.png" alt="client-1">
+                            <div class="name">Full name</div>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s,
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="testimonial">
+                            <img src="assets/img/rewiew-2.png" alt="client-2">
+                            <div class="name">Full name</div>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s,
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="testimonial">
+                            <img src="assets/img/rewiew-3.png" alt="client-3">
+                            <div class="name">Full name</div>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s,
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+    </section>
+
+
+
+    <!----End-of-about-section----->
+
+
+
+    <!----Blog-section----->
+
+    <section class="blog-section">
+        <div class="blog-banner" id="blog-section">
+            <h1>Health Service</h1>
+            <p id="blog-para"><i class="fas fa-heartbeat"></i> We also Provide health Services. Lorem ipsum dolor sit
+                amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="blog-contents">
+            <!--post1-->
+            <div class="blog-sliders">
+                <div class="blog-section-imgCont">
+                    <img src="assets/img/blog-img1.jpg" alt="COVID-19">
+                </div>
+                <h3>India’s COVID-19 vaccination coverage crosses 85 crore</h2>
+                    <p>The vaccination exercise as a tool to protect the most vulnerable population groups in the
+                        country from COVID-19 continues to be regularly reviewed and monitored at the highest level, the
+                        ministry said.</p>
+                    <a href="#">Read more</a>
+            </div>
+            <!--post2-->
+            <div class="blog-sliders">
+                <div class="blog-section-imgCont">
+                    <img src="assets/img/blog-img2.jpg" alt="COVID-19">
+                </div>
+                <h3>India’s COVID-19 vaccination coverage crosses 85 crore</h2>
+                    <p>The vaccination exercise as a tool to protect the most vulnerable population groups in the
+                        country from COVID-19 continues to be regularly reviewed and monitored at the highest level, the
+                        ministry said.</p>
+                    <a href="#">Read more</a>
+            </div>
+            <!--post3-->
+            <div class="blog-sliders">
+                <div class="blog-section-imgCont">
+                    <img src="assets/img/blog-img3.jpg" alt="COVID-19">
+                </div>
+                <h3>India’s COVID-19 vaccination coverage crosses 85 crore</h2>
+                    <p>The vaccination exercise as a tool to protect the most vulnerable population groups in the
+                        country from COVID-19 continues to be regularly reviewed and monitored at the highest level, the
+                        ministry said.</p>
+                    <a href="#">Read more</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!----End-of-Blog-section----->
+
+    <!--Footer-->
+    <footer class="footer">
+        <div class="footer-conatiner">
+            <div class="footer-abt-section">
+                <h3>About us</h3>
+                <p>We provide consulting services in the area of IFRS and management reporting, helping companies to
+                    reach their highest level. We optimize business processes, making them easier.</p>
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+            </div>
+            <div class="footer-ql-section">
+                <h3>Qucik Links</h3>
+                <ul>
+                    <a href="">
+                        <li>Home</li>
+                    </a>
+                    <a href="">
+                        <li>Services</li>
+                    </a>
+                    <a href="">
+                        <li>About</li>
+                    </a>
+                    <a href="">
+                        <li>Blog</li>
+                    </a>
+                    <a href="">
+                        <li>Contact</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="footer-ql-section">
+                <h3>Popular Services</h3>
+                <ul>
+                    <a href="">
+                        <li>PanCard</li>
+                    </a>
+                    <a href="">
+                        <li>PF Claiming</li>
+                    </a>
+                    <a href="">
+                        <li>Visa</li>
+                    </a>
+                    <a href="">
+                        <li>Web Designing</li>
+                    </a>
+                    <a href="">
+                        <li>Tax consultant</li>
+                    </a>
+                </ul>
+            </div>
+
+            <div class="footer-con-section">
+                <h3>Contact</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 2/4, Gopal Nagar 3rd Street, Korukkupet, Chennai, Tamil Nadu -
+                    600021.</p>
+                <p><i class="far fa-envelope"></i> tectify.admin@panel.com</p>
+                <p><i class="fas fa-phone-alt"></i> +91 1234567890</p>
+                <p></p>
+            </div>
+        </div>
+
+
+        <div class="footer-copyright">
+            <p>© 2021 Techtify. All Rights Reserved.</p>
+        </div>
+
+        <div class="footer-time-update">
+            <script>
+                document.write('Last Updated : ');
+                document.write(document.lastModified);
+            </script>
+        </div>
+
+    </footer>
+    <!--footer-ends-->
 
 
 
@@ -221,6 +517,33 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript">
+        //jquery for toggle dropdown menus
+        $(document).ready(function () {
+            //toggle sub-menus
+            $(".sub-btn").click(function () {
+                $(this).next(".sub-menu").slideToggle();
+            });
+
+            //toggle more-menus
+            $(".more-btn").click(function () {
+                $(this).next(".more-menu").slideToggle();
+            });
+        });
+    </script>
 
 
 
