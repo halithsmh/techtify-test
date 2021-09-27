@@ -1,0 +1,171 @@
+/*media-query-for-smart-phone*/
+
+@media only screen and (min-width:250px) and (max-width:506px) {
+    /*navbar*/
+    /*---------*/
+    /*home-section*/
+    .homeSection {
+        height: 120vh;
+    }
+    .homeSection__flexDesign {
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+    }
+    .homeSection__flexRight {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        margin: auto;
+        order: 2;
+    }
+    .homeSection__flexRight h2{
+        font-size: 12px;
+        width: 96%;
+        margin: auto;
+      }
+    .homeSection__flexRight h1 {
+        font-size: 28px;
+        line-height: 46px;
+        margin: auto;
+        width: 96%;
+    }
+    .homeSection__flexRight p {
+        letter-spacing: .3px;
+        width: 92%;
+        font-size: 16.5px;
+        text-align: start;
+        margin: auto;
+    }
+    .homeSection--button {
+        font-size: 14px;
+        width: 122px;
+        height: 42px;
+      }
+      .homeSection--button2 {
+        font-size: 14px;
+        width: 122px;
+        height: 42px;
+      }
+    .homeSection__flexLeft {
+        order: 1;
+        height: 320PX;
+        width: 320px;
+        
+    }
+    /*-------*/
+    /*servicesection(tours)*/
+    .serviceSection {
+        background-position: center;
+        background-size: cover;
+    }
+    .serviceSection__heading1-contents {
+        width: 100%;
+    }
+    .serviceSection__heading1-contents p {
+        font-size: 16px;
+        width: 96%;
+        line-height: 25px;
+    }
+    /*flex-box*/
+    .serviceSection__Container {
+        width: 315px;
+        padding: 50px 20px 38px 20px;
+    }
+    /*----------*/
+    /*-----about-section----*/
+    .about-section {
+        text-align: center;
+        margin: auto;
+    }
+    .about-section__container {
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-section-left {
+        width: 100%;
+        margin: auto;
+        order: 2;
+    }
+    .about-section-contents h1 {
+        font-size: 32px;
+        width: 96%;
+        margin: auto;
+        padding: 20px 0px;
+    }
+    #about-para {
+        width: 92%;
+        margin: auto;
+    }
+    .about-section-right {
+        width: 90%;
+        margin: auto;
+        padding: 10px;
+        order: 1;
+        margin-top: -50px;
+    }
+    .about-section__msg-section {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        padding-top: 25px;
+    }
+    .about-section__msgBox {
+        width: 85%;
+        padding-bottom: 50px;
+        text-align: center;
+        margin: auto;
+    }
+    /*-----------*/
+    /*-----testimonial-reviews------*/
+    .testimonials .col {
+        flex: 100%;
+        max-width: 10000%;
+    }
+    /*---------------------*/
+    /*------blog-section----*/
+    #blog-para {
+        width: 96%;
+    }
+    .blog-contents {
+        flex-direction: column;
+        padding: 0;
+        margin: 30px auto;
+        align-items: center;
+    }
+    .blog-sliders {
+        margin: 35px 0 0 0;
+        width: 336px;
+        height: 562px;
+    }
+    .blog-section a {
+        position: relative;
+        top: 36px;
+        font-size: 15.5px;
+    }
+    /*-----------------------*/
+    /*----footer----*/
+    .footer-conatiner {
+        display: block;
+        padding-left: 14px;
+    }
+    .footer-abt-section {
+        width: 100%;
+        padding-left: 0px;
+        text-align: start;
+    }
+    .footer-abt-section i {
+        margin-right: 18px;
+        left: 6px;
+      }
+    .footer-ql-section {
+        padding-top: 28px;
+    }
+    .footer-con-section {
+        position: relative;
+        padding-top: 28px;
+        width: 100%;
+    }
+    /*----footer----*/
+}
