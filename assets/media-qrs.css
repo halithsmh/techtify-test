@@ -387,7 +387,7 @@
     /*contact section*/
 
     .contact-container {
-        flex-direction: column;
+        display: block;
         width: 100%;
         overflow-x: hidden;
         align-items: center;
