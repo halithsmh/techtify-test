@@ -155,31 +155,7 @@
     /*----footer----*/
 
 
-
-    /*contact-section*/
-    .contact-container {
-        flex-direction: column;
-        width: 100%;
-        margin: auto auto;
-        align-items: center;
-        justify-content: center;
-       
-    }
-   
-
-    .content-disp-right {
-        order: 1;
-        margin: 30px 0 30px 0;
-    }
-
-    .contact-disp-left {
-        order: 2;
-        width: 100%;
-    }
-    /*contact section*/
-
-
-
+ 
 }
 
 
@@ -383,22 +359,6 @@
 
 
 
-
-    /*contact section*/
-
-    .contact-container {
-        display: block;
-        width: 100%;
-        overflow-x: hidden;
-        align-items: center;
-        justify-content: center;
-    }
-   
-    .contact-disp-left {
-        width: 100%;
-    }
-
-    /*contact section*/
 }
 
 

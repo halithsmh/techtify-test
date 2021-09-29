@@ -28,6 +28,8 @@
             box-sizing: border-box;
         }
 
+      
+
         /*btn-disable*/
         #contact-btn-disable {
             pointer-events: none;
@@ -40,21 +42,34 @@
         /*contact-section*/
         .contact-section {
             margin-top: 73px;
-           
+
         }
 
         .contact-container {
             display: flex;
-            width: 90%;
+            width: 100%;
             margin: auto;
-            justify-content: space-around;
-        
+            justify-content: space-evenly;
+
         }
 
 
-        .content-disp-right {
-            margin-top: 16%;
-            position: relative;
+        
+
+        .contact-upper-heads{
+            padding-top: 30px;
+        }
+
+
+        .contact-upper-heads h3{
+            font-size: 26px;
+            padding: 8px 0;
+        }
+
+        .contact-upper-heads p{
+            width: 74%;
+            color: #777777;
+            padding-bottom: 18px;
         }
 
         .contact-grp h6 {
@@ -83,9 +98,35 @@
         }
 
 
-        .contact-disp-left {
-            width: 580px;
+        .contact-main-form {
+            width: 100%;
+            height: auto;
+            padding-top: 40px;
         }
+
+        .contact-g_map {
+            display: flex;
+            margin: auto;
+            justify-content: center;
+            padding-top: 120px;
+            padding-bottom: 80px;
+        }
+
+        .con-g-map-pad {
+            border: .5px solid rgba(0, 0, 0, 0.24);
+            box-shadow: 0px 0px 9px 0px rgba(59, 59, 59, 0.15);
+            -webkit-box-shadow: 0px 0px 9px 0px rgba(59, 59, 59, 0.15);
+            -moz-box-shadow: 0px 0px 9px 0px rgba(59, 59, 59, 0.15);
+            margin: auto;
+        }
+
+        .contact-g_map iframe {
+            width: 450px;
+            height: 400px;
+            padding: 20px;
+            
+        }
+
 
         /*page-loader*/
         #preloader {
@@ -101,6 +142,97 @@
 
         /*------*/
 
+        /*media qrs*/
+        @media only screen and (min-width:506px) and (max-width:1000px){
+            .contact-g_map {
+            flex-direction: column;
+            margin: auto;
+            justify-content: center;
+            padding-top: 120px;
+            padding-bottom: 80px;
+        } 
+
+
+
+        .contact-g_map{
+            padding-top: 50px;
+            padding-bottom: 40px;
+        }
+
+
+        .con-g-map-pad {
+            order: 2;
+            
+        }
+
+        .content-info-lists{
+            text-align: center;
+        }
+
+        .contact-upper-heads{
+            padding-top: 0px;
+        }
+
+        .contact-upper-heads p{
+            width: 60%;
+            margin: auto;
+        }
+
+        .contact-g_map iframe {
+            width: 420px;
+            height: 370px;
+            padding: 18px;
+            
+        }
+
+        }
+
+
+        @media only screen and (min-width:250px) and (max-width:506px){
+            .contact-g_map {
+            flex-direction: column;
+            margin: auto;
+            justify-content: center;
+            padding-top: 120px;
+            padding-bottom: 80px;
+        } 
+
+
+
+        .contact-g_map{
+            padding-top: 50px;
+            padding-bottom: 40px;
+        }
+
+
+        .con-g-map-pad {
+            order: 2;
+            
+        }
+
+        .content-info-lists{
+            text-align: center;
+        }
+
+        .contact-upper-heads{
+            padding-top: 0px;
+        }
+
+        .contact-upper-heads p{
+            width: 88%;
+            margin: auto;
+            line-height: 28px;
+        }
+
+        .contact-g_map iframe {
+            width: 350px;
+            height: 300px;
+            padding: 18px;
+            
+        }
+        }
+
+        /*---------*/
     </style>
 
 
@@ -110,7 +242,7 @@
 <body>
 
     <!--pre-loader-->
-    <div id="preloader"></div>
+    <div id="preloader"></div> 
 
 
 
@@ -163,17 +295,29 @@
 
     <!--contact-page-->
     <section class="contact-section">
-        <div class="contact-container">
 
-            <div class="contact-disp-left">
-                <!-- form.123formbuilder.com script begins here -->
-                <script type="text/javascript" defer src="https://form.123formbuilder.com/embed/6003498.js"
-                    data-role="form" data-default-width="650px"></script>
-                <!-- form.123formbuilder.com script ends here -->
+
+       
+
+
+        <div class="contact-g_map">
+
+            <div class="con-g-map-pad">
+
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.65166604383!2d80.16867811450172!3d12.994117217900286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525e1f5da86397%3A0x21092f216ee26e47!2sChennai%20International%20Airport!5e0!3m2!1sen!2sin!4v1632890947811!5m2!1sen!2sin"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
             </div>
 
 
-            <div class="content-disp-right">
+            <div class="content-info-lists">
+
+                <div class="contact-upper-heads">
+                    <h3>Get in Touch</h3>
+                    <p>Looking for help? fill the below contact form, we will reach you as soon as possible...</p>
+                    
+                </div>
 
                 <div class="contact-grp">
                     <h6><i class="fa fa-address-book"></i> Call us</h6>
@@ -196,10 +340,23 @@
             </div>
 
 
-
-
-
         </div>
+
+
+
+        <div class="contact-main-form">
+            <!-- form.123formbuilder.com script begins here -->
+            <script type="text/javascript" defer src="https://form.123formbuilder.com/embed/6003498.js" data-role="form"
+                data-default-width="650px"></script>
+            <!-- form.123formbuilder.com script ends here -->
+        </div>
+
+
+
+
+
+
+
     </section>
     <!---------------->
 
@@ -209,7 +366,7 @@
     <footer class="footer">
         <div class="footer-conatiner">
             <div class="footer-abt-section">
-                <h6>About us</h6>
+                <h3>About us</h3>
                 <p>We provide consulting services in the area of IFRS and management reporting, helping companies to
                     reach their highest level. We optimize business processes, making them easier.</p>
                 <i class="fab fa-facebook"></i>
@@ -217,27 +374,27 @@
                 <i class="fab fa-twitter"></i>
             </div>
             <div class="footer-ql-section">
-                <h6>Qucik Links</h6>
+                <h3>Qucik Links</h3>
                 <ul>
-                    <a href="">
+                    <a href="index.html">
                         <li>Home</li>
                     </a>
-                    <a href="#toursSection">
+                    <a href="index.html#toursSection">
                         <li>Services</li>
                     </a>
-                    <a href="#about-container">
+                    <a href="index.html#about-container">
                         <li>About</li>
                     </a>
-                    <a href="#blog-section">
+                    <a href="index.html#blog-section">
                         <li>Blog</li>
                     </a>
-                    <a href="">
+                    <a href="#">
                         <li>Contact</li>
                     </a>
                 </ul>
             </div>
             <div class="footer-ql-section">
-                <h6>Popular Services</h6>
+                <h3>Popular Services</h3>
                 <ul>
                     <a href="">
                         <li>PanCard</li>
@@ -258,7 +415,7 @@
             </div>
 
             <div class="footer-con-section">
-                <h6>Contact</h6>
+                <h3>Contact</h3>
                 <p><i class="fas fa-map-marker-alt"></i> 2/4, Gopal Nagar 3rd Street, Korukkupet, Chennai, Tamil Nadu -
                     600021.</p>
                 <p><i class="far fa-envelope"></i> tectify.admin@panel.com</p>
