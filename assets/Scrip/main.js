@@ -76,9 +76,11 @@ window.addEventListener("scroll", function () {
   setInterval(function () {
     slide_index++;
     showSlides();
-  }, 3000);
+  }, 3500);
 
 })();
 
 
 //image-slider---------
+
+
