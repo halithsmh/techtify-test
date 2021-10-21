@@ -40,13 +40,39 @@
 
 <body>
 
+
+  <!--========== pre-loader ===========-->
+  <div id="preloader">
+    <style>
+      #preloader {
+        background: #fff url(assets/img/loading.gif) no-repeat center;
+        background-size: 32%;
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100099;
+      }
+    </style>
+    <script>
+      var loader = document.getElementById("preloader");
+
+      window.addEventListener("load", function () {
+        loader.style.display = "none";
+      })
+    </script>
+  </div>
+  <!--=========== End of Preloader =========-->
+
+
   <!-- ======= Header ======= -->
   <header id="header" class="header fixed-top">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center">
         <!--<img src="assets/img/logo.png" alt="">-->
-        <span>Techtify</span>
+        <span><span style="color: #4154f1;">Tech</span>tify</span>
       </a>
 
       <nav id="navbar" class="navbar">
@@ -69,7 +95,7 @@
           </li>
           <li><a class="nav-link scrollto" href="#about">About</a></li>
           <li><a class="nav-link scrollto" href="#recent-blog-posts">Blog</a></li>
-          <li><a class="getstarted scrollto" href="#about">Contact us</a></li>
+          <li><a class="getstarted scrollto" href="contact.html">Contact us</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -240,7 +266,7 @@
                 their highest level. We optimize business processes, making them easier.
               </p>
               <div class="text-center text-lg-start">
-                <a href="#"
+                <a href="contact.html"
                   class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
                   <span>Get in Touch</span>
                   <i class="bi bi-arrow-right"></i>
@@ -282,7 +308,7 @@
                 <a class="nav-link" data-bs-toggle="pill" href="#tab2">Our Vission</a>
               </li>
               <li>
-                <a class="nav-link" data-bs-toggle="pill" href="#tab3">Approach</a>
+                <a class="nav-link" data-bs-toggle="pill" href="#tab3">Our Approach</a>
               </li>
             </ul><!-- End Tabs -->
 
@@ -566,8 +592,8 @@
             <h4>Useful Links</h4>
             <ul>
               <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#about">About us</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#services">Services</a></li>
               <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
               <li><i class="bi bi-chevron-right"></i> <a href="#">Privacy policy</a></li>
             </ul>
